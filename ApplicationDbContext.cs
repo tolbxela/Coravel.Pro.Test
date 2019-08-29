@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CoravelTest
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext, ICoravelProDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
